@@ -1,12 +1,16 @@
-import './Footer.css' // IMPORT
+import "./Footer.css";
 
-function Footer() { // LOGIC
+function Footer(){
 
-  return ( // MUST RETURN SOMETHING
-    <div>
-      <h1>Footer</h1>
-    </div>
-  )
+    return(
+        <footer className="footer">
+
+            <p>
+                My React Store © 2026
+            </p>
+
+        </footer>
+    );
 }
 
-export default Footer // EXPORT
+export default Footer;

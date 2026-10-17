@@ -1,14 +1,20 @@
-// COMPONENTS 
-// Add .jsx file and then after create a CSS file with the same name
-import './Navbar.css'// IMPORT
+import "./Navbar.css";
 
-function Navbar() { // LOGIC
+function Navbar(){
 
-  return ( // MUST RETURN SOMETHING
-    <div>
-      <h1>Menu</h1>
-    </div>
-  )
+    return(
+        <nav className="navbar">
+
+            <h2>Cozy Cart</h2>
+
+            <div className="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Catalog</a>
+                <a href="#">About</a>
+            </div>
+
+        </nav>
+    );
 }
 
-export default Navbar // EXPORT
+export default Navbar;

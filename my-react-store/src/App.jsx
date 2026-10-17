@@ -1,16 +1,22 @@
-import './App.css' // IMPORTS  
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Catalog from "./pages/Catalog";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() { // LOGIC 
-  
-  return (
-    <div>
-      <h1>Hello from react!</h1>
-      <Navbar></Navbar> {/* Component can be auto closed and auto imports the component from the file path */}
-      <Footer></Footer> {/* Component can be auto closed and auto imports the component from the file path */}
-    </div>
-  )
+function App(){
+
+    return(
+        <>
+
+            <Navbar />
+
+            <Catalog />
+
+            <Footer />
+
+        </>
+    );
 }
 
-export default App // EXPORTS
+export default App;
