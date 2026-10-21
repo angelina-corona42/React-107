@@ -1,3 +1,5 @@
+// Mock catalog data.
+// This is acting like our temporary database until we eventually use a real API/database.
 const catalog = [
 
     {
@@ -29,6 +31,7 @@ const catalog = [
 
 class DataService{
 
+    // getProducts() returns the entire catalog array.
     getProducts(){
 
         return catalog;

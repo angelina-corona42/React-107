@@ -1,43 +1,57 @@
 import "./QuantityPicker.css";
-import { useState } from "react";
 
 
-function QuantityPicker(){
-//          Name       Function
-    const [quantity, setQuantity] = useState(1); // useState = STATE variable lets a component remember a value and update the screen when that value changes.
+function QuantityPicker(props){
+
+    // quantity comes FROM the Product component through props.
+    // Product is responsible for remembering the quantity.
+
 
     function handleDecrease(){
 
-        const nextValue = quantity - 1;
+        // Subtract 1 from the current quantity.
+        const nextValue = props.quantity - 1;
 
+        // Prevent quantity from going below 1.
         if(nextValue > 0){
 
-            setQuantity(nextValue);
+            // Tell Product to update the quantity.
+            props.setQuantity(nextValue);
         }
     }
 
+
     function handleIncrease(){
 
-        const nextValue = quantity + 1;
+        // Add 1 to the current quantity.
+        const nextValue = props.quantity + 1;
 
-        setQuantity(nextValue);
+        // Tell Product to update the quantity.
+        props.setQuantity(nextValue);
     }
+
 
     return(
 
         <div className="quantity-picker">
-            <button className="btn-minus"
-                onClick={handleDecrease}>
+
+            <button
+                className="btn-minus"
+                onClick={handleDecrease}
+            >
                 -
             </button>
 
 
             <label className="label-quantity">
-                {quantity}
+                {props.quantity}
             </label>
 
-            <button className="btn-plus"
-                onClick={handleIncrease}>
+
+            <button
+                className="btn-plus"
+                onClick={handleIncrease}
+            >
                 +
             </button>
 
