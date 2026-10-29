@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import About from './pages/About';
 import Catalog from "./pages/Catalog";
 import Contact from './pages/Contact';
+import Home from './pages/Home';
 import NotFound from "./pages/NotFound";
 
 {/* COMPONENTS */}
@@ -23,6 +24,7 @@ function App() {
 
       <Routes>
         <Route />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} /> {/* Route allows you to define the page with the path in the url bar */}
         <Route path="/contact" element={<Contact />}/>
         <Route path="/catalog" element={<Catalog />}/>

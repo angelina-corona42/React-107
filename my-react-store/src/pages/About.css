@@ -1,0 +1,79 @@
+/* ABOUT PAGE */
+
+.about-page {
+    background-color: #f7f3ef;
+    color: #2f2f2f;
+    min-height: 100%;
+}
+
+
+/* ABOUT HERO */
+
+.about-hero {
+    text-align: center;
+    padding: 70px 10%;
+    background-color: #eadfd6;
+}
+
+.about-hero h1 {
+    color: #6b4f3a;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* ABOUT CARDS */
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    padding: 60px 8%;
+}
+
+.about-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    width: 280px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about-card h2 {
+    color: #6b4f3a;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    line-height: 1.6;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-hero h1 {
+        font-size: 36px;
+    }
+
+}
