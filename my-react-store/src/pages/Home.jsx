@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import './Home.css';
 
 
@@ -15,10 +16,10 @@ function Home() {
                     <p>
                         Explore our collection and find something you love.
                     </p>
-
-                    <button className="hero-button">
-                        View Catalog
-                    </button>
+                    <section className="page-links">
+                        <Link to="/catalog">View Catalog</Link>
+                        <Link to="/about">Learn About Us</Link>
+                    </section>
                 </div>
 
                 <div className="hero-image">
@@ -44,6 +45,7 @@ function Home() {
                 </div>
 
             </section>
+          
         </div>
     );
 }

@@ -32,3 +32,28 @@ we can use this class instead of making the entire app dark.
     background-color: #080808;
     color: #fbfcfc;
 }
+
+.page-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.page-links a {
+    background-color: #6b4f3a;
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.page-links a:hover {
+    background-color: #4f392a;
+    transform: translateY(-2px);
+}

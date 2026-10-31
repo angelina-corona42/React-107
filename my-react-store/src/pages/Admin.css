@@ -1,0 +1,299 @@
+/* ADMIN PAGE */
+
+.admin-page {
+  background-color: #f7f3ef;
+  color: #2f2f2f;
+  min-height: 100%;
+  padding-bottom: 60px;
+}
+
+/* ADMIN HEADER */
+
+.admin-header {
+  background-color: #eadfd6;
+
+  padding: 60px 8%;
+
+  text-align: center;
+}
+
+.admin-label {
+  color: #8b6f5a;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 10px;
+}
+
+.admin-header h1 {
+  color: #6b4f3a;
+
+  font-size: 45px;
+
+  margin: 0 0 15px;
+}
+
+.admin-header p {
+  font-size: 17px;
+
+  margin: 0;
+}
+
+/* DASHBOARD SUMMARY */
+
+.admin-summary {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+  padding: 40px 8%;
+}
+
+.summary-card {
+  background-color: white;
+
+  width: 250px;
+
+  padding: 25px;
+
+  text-align: center;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.summary-card h3 {
+  color: #6b4f3a;
+
+  margin-top: 0;
+}
+
+.summary-card p {
+  margin-bottom: 0;
+
+  font-size: 14px;
+}
+
+/* ADMIN SECTIONS */
+
+.admin-section {
+  max-width: 900px;
+
+  margin: 30px auto;
+
+  padding: 0 20px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.section-title h2 {
+  color: #6b4f3a;
+
+  font-size: 28px;
+
+  margin-bottom: 5px;
+}
+
+.section-title p {
+  margin-top: 0;
+
+  color: #666666;
+}
+
+/* FORM */
+
+.admin-form {
+  background-color: white;
+
+  padding: 30px;
+
+  border-radius: 14px;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.form-row {
+  display: flex;
+
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+
+  margin-bottom: 8px;
+
+  color: #4f392a;
+}
+
+/* INPUTS */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px;
+
+  border: 1px solid #cdbeb2;
+
+  border-radius: 7px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 15px;
+
+  background-color: #fffdfb;
+
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* When the user clicks inside an input */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+
+  border-color: #6b4f3a;
+
+  box-shadow: 0 0 0 2px rgba(107, 79, 58, 0.1);
+}
+
+/* BUTTON */
+
+.admin-button {
+  background-color: #6b4f3a;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 7px;
+
+  padding: 12px 24px;
+
+  font-size: 16px;
+
+  font-family: "Poppins", sans-serif;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.admin-button:hover {
+  background-color: #4f392a;
+
+  transform: translateY(-2px);
+}
+/* PRODUCT AND COUPON LISTS */
+
+.admin-list {
+  margin-top: 30px;
+}
+
+.admin-list h3 {
+  color: #6b4f3a;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* Individual product or coupon card */
+
+.admin-card {
+  background-color: white;
+
+  padding: 20px;
+
+  margin-bottom: 15px;
+
+  border-radius: 10px;
+
+  border-left: 5px solid #6b4f3a;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.admin-card h4 {
+  color: #6b4f3a;
+
+  font-size: 18px;
+
+  margin: 0 0 8px;
+}
+
+.admin-card p {
+  margin: 5px 0;
+
+  color: #555555;
+}
+/* KEEP ADMIN TEXT DARK */
+
+.admin-page,
+.admin-form,
+.admin-card {
+  color: #2f2f2f;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  color: #2f2f2f;
+  background-color: #fffdfb;
+}
+
+/* Placeholder text */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #888888;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .admin-header h1 {
+    font-size: 36px;
+  }
+
+  .admin-summary {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .summary-card {
+    width: 90%;
+  }
+
+  .form-row {
+    flex-direction: column;
+
+    gap: 0;
+  }
+
+  .admin-form {
+    padding: 20px;
+  }
+}
