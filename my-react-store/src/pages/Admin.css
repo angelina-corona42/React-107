@@ -297,3 +297,14 @@
     padding: 20px;
   }
 }
+
+/* PRODUCT IMAGE */
+
+.product-image {
+  width: 100%;
+  max-width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
