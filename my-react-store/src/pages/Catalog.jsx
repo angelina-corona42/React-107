@@ -33,7 +33,7 @@ function Catalog() {
 
     // These categories match the categories
     // inside our product objects.
-    let cats = ["Beverages", "Food"];
+    let cats = ["Home", "Clothing", "Accessories", "Electronics"];
 
     // Stores the categories in React state.
     setCategories(cats);

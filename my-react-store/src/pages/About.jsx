@@ -1,21 +1,18 @@
-import { useContext } from "react";
-import { Link } from "react-router";
 import "./About.css";
 
-import GlobalContext from "../state/globalContext";
 
 function About() {
-  const userInformation = useContext(GlobalContext).user;
+  
 
   return (
     <div className="about-page">
       <section className="about-hero">
         <h1>About Us</h1>
-        <p> My name is {userInformation.name}</p>
-        <p> I am in Cohort {userInformation.id}</p>
         <p>
-          We believe shopping should be simple, enjoyable, and easy to explore.
-          Our goal is to provide a clean and welcoming experience for everyone.
+          Welcome to Cozy Cart! We created this store to make shopping feel simple, comfortable, and enjoyable. Our catalog includes a mix of home items, clothing, accessories, and electronics, with something for everyone.
+        </p>
+        <p>
+          Our goal is to create an easy shopping experience where customers can browse products, find what they like, and keep everything organized in one place. Cozy Cart is all about keeping things simple while still making the experience feel warm and welcoming.
         </p>
       </section>
 
