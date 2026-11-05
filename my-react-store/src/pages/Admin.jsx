@@ -17,7 +17,6 @@ import mechanicalKeyboard from "../assets/mechanical-keyboard.png";
 import mountainJournal from "../assets/mountain-journal.png";
 
 function Admin() {
-
   // PRODUCT STATE
   const [productName, setProductName] = useState("");
   const [productCategory, setProductCategory] = useState("");
@@ -121,7 +120,8 @@ function Admin() {
       price: 14.99,
       quantity: 20,
       image: mountainJournal,
-      description: "A simple journal with a mountain design for notes and ideas.",
+      description:
+        "A simple journal with a mountain design for notes and ideas.",
     },
   ]);
 
@@ -176,7 +176,6 @@ function Admin() {
 
   return (
     <div className="admin-page">
-
       {/* ADMIN HEADER */}
       <section className="admin-header">
         <div>
@@ -184,16 +183,12 @@ function Admin() {
 
           <h1>Admin Dashboard</h1>
 
-          <p>
-            Manage products, discounts, and coupons for your store.
-          </p>
+          <p>Manage products, discounts, and coupons for your store.</p>
         </div>
       </section>
 
-
       {/* DASHBOARD CARDS */}
       <section className="admin-summary">
-
         <div className="summary-card">
           <h3>Products</h3>
           <p>Manage your store catalog.</p>
@@ -208,25 +203,18 @@ function Admin() {
           <h3>Coupons</h3>
           <p>Create coupon codes.</p>
         </div>
-
       </section>
-
 
       {/* ADD PRODUCT */}
       <section className="admin-section">
-
         <div className="section-title">
           <h2>Add Product</h2>
 
-          <p>
-            Add a new item to your store catalog.
-          </p>
+          <p>Add a new item to your store catalog.</p>
         </div>
 
         <form className="admin-form" onSubmit={addProduct}>
-
           <div className="form-row">
-
             <div className="form-group">
               <label>Product Name</label>
 
@@ -255,11 +243,9 @@ function Admin() {
                 <option>Other</option>
               </select>
             </div>
-
           </div>
 
           <div className="form-row">
-
             <div className="form-group">
               <label>Price</label>
 
@@ -283,7 +269,6 @@ function Admin() {
                 required
               />
             </div>
-
           </div>
 
           <div className="form-group">
@@ -312,28 +297,17 @@ function Admin() {
           <button type="submit" className="admin-button">
             Add Product
           </button>
-
         </form>
-
 
         {/* PRODUCT LIST */}
         <div className="admin-list">
-
           <h3>Products</h3>
 
           {products.length === 0 ? (
-
             <p>No products added yet.</p>
-
           ) : (
-
             products.map((product, index) => (
-
-              <div
-                className="admin-card"
-                key={index}
-              >
-
+              <div className="admin-card" key={index}>
                 <img
                   className="product-image"
                   src={product.image}
@@ -342,48 +316,29 @@ function Admin() {
 
                 <h4>{product.name}</h4>
 
-                <p>
-                  Category: {product.category}
-                </p>
+                <p>Category: {product.category}</p>
 
-                <p>
-                  Price: ${product.price}
-                </p>
+                <p>Price: ${product.price}</p>
 
-                <p>
-                  Quantity: {product.quantity}
-                </p>
+                <p>Quantity: {product.quantity}</p>
 
-                <p>
-                  {product.description}
-                </p>
-
+                <p>{product.description}</p>
               </div>
-
             ))
-
           )}
-
         </div>
-
       </section>
-
 
       {/* ADD DISCOUNT */}
       <section className="admin-section">
-
         <div className="section-title">
           <h2>Add Discount</h2>
 
-          <p>
-            Create a discount for one of your products.
-          </p>
+          <p>Create a discount for one of your products.</p>
         </div>
 
         <form className="admin-form">
-
           <div className="form-row">
-
             <div className="form-group">
               <label>Product</label>
 
@@ -391,27 +346,19 @@ function Admin() {
                 <option value="">Select Product</option>
 
                 {products.map((product, index) => (
-                  <option key={index}>
-                    {product.name}
-                  </option>
+                  <option key={index}>{product.name}</option>
                 ))}
-
               </select>
             </div>
 
             <div className="form-group">
               <label>Discount Percentage</label>
 
-              <input
-                type="number"
-                placeholder="Example: 20"
-              />
+              <input type="number" placeholder="Example: 20" />
             </div>
-
           </div>
 
           <div className="form-row">
-
             <div className="form-group">
               <label>Start Date</label>
               <input type="date" />
@@ -421,39 +368,24 @@ function Admin() {
               <label>End Date</label>
               <input type="date" />
             </div>
-
           </div>
 
-          <button
-            type="button"
-            className="admin-button"
-          >
+          <button type="button" className="admin-button">
             Add Discount
           </button>
-
         </form>
-
       </section>
-
 
       {/* CREATE COUPON */}
       <section className="admin-section">
-
         <div className="section-title">
           <h2>Create Coupon</h2>
 
-          <p>
-            Create a coupon customers can use at checkout.
-          </p>
+          <p>Create a coupon customers can use at checkout.</p>
         </div>
 
-        <form
-          className="admin-form"
-          onSubmit={addCoupon}
-        >
-
+        <form className="admin-form" onSubmit={addCoupon}>
           <div className="form-row">
-
             <div className="form-group">
               <label>Coupon Code</label>
 
@@ -461,9 +393,7 @@ function Admin() {
                 type="text"
                 placeholder="Example: SAVE20"
                 value={couponCode}
-                onChange={(event) =>
-                  setCouponCode(event.target.value)
-                }
+                onChange={(event) => setCouponCode(event.target.value)}
                 required
               />
             </div>
@@ -475,26 +405,20 @@ function Admin() {
                 type="number"
                 placeholder="Example: 20"
                 value={couponDiscount}
-                onChange={(event) =>
-                  setCouponDiscount(event.target.value)
-                }
+                onChange={(event) => setCouponDiscount(event.target.value)}
                 required
               />
             </div>
-
           </div>
 
           <div className="form-row">
-
             <div className="form-group">
               <label>Expiration Date</label>
 
               <input
                 type="date"
                 value={couponExpiration}
-                onChange={(event) =>
-                  setCouponExpiration(event.target.value)
-                }
+                onChange={(event) => setCouponExpiration(event.target.value)}
               />
             </div>
 
@@ -505,84 +429,44 @@ function Admin() {
                 type="number"
                 placeholder="$0.00"
                 value={couponMinimum}
-                onChange={(event) =>
-                  setCouponMinimum(event.target.value)
-                }
+                onChange={(event) => setCouponMinimum(event.target.value)}
               />
             </div>
-
           </div>
 
-          <button
-            type="submit"
-            className="admin-button"
-          >
+          <button type="submit" className="admin-button">
             Create Coupon
           </button>
-
         </form>
-
 
         {/* COUPON LIST */}
         <div className="admin-list">
-
           <h3>Coupons</h3>
 
           {coupons.length === 0 ? (
-
             <p>No coupons created yet.</p>
-
           ) : (
-
             coupons.map((coupon, index) => (
-
-              <div
-                className="admin-card"
-                key={index}
-              >
-
+              <div className="admin-card" key={index}>
                 <h4>{coupon.code}</h4>
 
-                <p>
-                  {coupon.discount}% OFF
-                </p>
+                <p>{coupon.discount}% OFF</p>
 
-                {coupon.expiration && (
-                  <p>
-                    Expires: {coupon.expiration}
-                  </p>
-                )}
+                {coupon.expiration && <p>Expires: {coupon.expiration}</p>}
 
-                {coupon.minimum && (
-                  <p>
-                    Minimum Purchase: ${coupon.minimum}
-                  </p>
-                )}
-
+                {coupon.minimum && <p>Minimum Purchase: ${coupon.minimum}</p>}
               </div>
-
             ))
-
           )}
-
         </div>
-
       </section>
-
 
       {/* PAGE LINKS */}
       <section className="page-links">
+        <Link to="/home">Back Home</Link>
 
-        <Link to="/home">
-          Back Home
-        </Link>
-
-        <Link to="/catalog">
-          View Catalog
-        </Link>
-
+        <Link to="/catalog">View Catalog</Link>
       </section>
-
     </div>
   );
 }

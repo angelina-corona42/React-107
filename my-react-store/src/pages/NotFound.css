@@ -1,101 +1,93 @@
 /* NOT FOUND PAGE */
 
 .not-found-page {
-    min-height: 70vh;
+  min-height: 70vh;
 
-    display: flex;
+  display: flex;
 
-    justify-content: center;
+  justify-content: center;
 
-    align-items: center;
+  align-items: center;
 
-    text-align: center;
+  text-align: center;
 
-    background-color: #f7f3ef;
+  background-color: #f7f3ef;
 
-    padding: 40px;
+  padding: 40px;
 }
-
 
 /* CONTENT */
 
 .not-found-content {
-    background-color: white;
+  background-color: white;
 
-    padding: 50px;
+  padding: 50px;
 
-    border-radius: 15px;
+  border-radius: 15px;
 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
-
 
 /* 404 NUMBER */
 
 .not-found-content h1 {
-    font-size: 90px;
+  font-size: 90px;
 
-    color: #6b4f3a;
+  color: #6b4f3a;
 
-    margin: 0;
+  margin: 0;
 }
-
 
 /* PAGE TITLE */
 
 .not-found-content h2 {
-    font-size: 30px;
+  font-size: 30px;
 
-    margin: 10px 0;
+  margin: 10px 0;
 }
-
 
 /* TEXT */
 
 .not-found-content p {
-    font-size: 17px;
+  font-size: 17px;
 
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
-
 
 /* BUTTON */
 
 .not-found-content button {
-    background-color: #6b4f3a;
+  background-color: #6b4f3a;
 
-    color: white;
+  color: white;
 
-    border: none;
+  border: none;
 
-    border-radius: 7px;
+  border-radius: 7px;
 
-    padding: 12px 22px;
+  padding: 12px 22px;
 
-    font-size: 16px;
+  font-size: 16px;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .not-found-content button:hover {
-    background-color: #4f392a;
+  background-color: #4f392a;
 
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
-
 
 /* MOBILE */
 
 @media (max-width: 768px) {
+  .not-found-content {
+    padding: 35px 20px;
+  }
 
-    .not-found-content {
-        padding: 35px 20px;
-    }
-
-    .not-found-content h1 {
-        font-size: 70px;
-    }
-
+  .not-found-content h1 {
+    font-size: 70px;
+  }
 }

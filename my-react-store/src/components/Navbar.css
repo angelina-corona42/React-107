@@ -25,6 +25,55 @@
 .nav-links a:hover {
     color: #dac1a9;
 }
+.user-cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 18px;
+}
+.user-cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 18px;
+}
+
+.cart-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -12px;
+
+  background-color: #eadfd6;
+  color: #6b4f3a;
+
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
 
     .navbar {

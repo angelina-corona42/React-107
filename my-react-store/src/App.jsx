@@ -7,6 +7,7 @@ import GlobalProvider from "./state/globalProvider";
 }
 import About from "./pages/About";
 import Admin from "./pages/Admin";
+import Cart from "./pages/Cart";
 import Catalog from "./pages/Catalog";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -24,7 +25,6 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 {
   /* This is how to make a comment */
 }
@@ -41,7 +41,8 @@ function App() {
           {/* Route allows you to define the page with the path in the url bar */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/catalog" element={<Catalog />} />
-          <Route path= "/admin" element={<Admin />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="*" element={<NotFound />} /> {/* *= All the rest */}
         </Routes>
 

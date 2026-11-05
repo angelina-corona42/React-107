@@ -1,71 +1,54 @@
-import "./Product.css";
-import QuantityPicker from "./QuantityPicker";
+import { useContext } from "react";
 import { useState } from "react";
 
+import GlobalContext from "../state/globalContext";
+
+import "./Product.css";
+import QuantityPicker from "./QuantityPicker";
 
 function Product(props) {
+  const globalAdd = useContext(GlobalContext).addProductToCart;
 
-    // Name        Function
-    const [quantity, setQuantity] = useState(1);
+  // QUANTITY STATE
+  const [quantity, setQuantity] = useState(1);
 
-    // useState = STATE variable lets a component remember
-    // a value and update the screen when that value changes.
+  // Calculates total price
+  const total = props.data.price * quantity;
 
+  // ADD TO CART
+  function onAddToCart() {
+    // Send both product AND quantity
+    globalAdd(props.data, quantity);
+  }
 
-    // Calculates the total price based on the quantity selected.
-    const total = props.data.price * quantity;
+  return (
+    <div className="product">
+      {/* PRODUCT IMAGE */}
+      <img src={props.data.image} alt={props.data.title} />
 
+      {/* PRODUCT TITLE */}
+      <h5>{props.data.title}</h5>
 
-    return (
+      {/* PRODUCT PRICE */}
+      <div className="prices">
+        <label>Price:</label>
 
-        <div className="product">
+        <label>${props.data.price.toFixed(2)}</label>
 
-            {/* PRODUCT IMAGE */}
-            <img
-                src={props.data.image}
-                alt={props.data.title}
-            />
+        <label>Total:</label>
 
+        <label>${total.toFixed(2)}</label>
+      </div>
 
-            {/* PRODUCT TITLE */}
-            <h5>
-                {props.data.title}
-            </h5>
+      {/* QUANTITY PICKER */}
+      <QuantityPicker quantity={quantity} setQuantity={setQuantity} />
 
-
-            {/* PRODUCT PRICE */}
-            <div className="prices">
-
-                <label>
-                    Price:
-                </label>
-
-                <label>
-                    ${props.data.price.toFixed(2)}
-                </label>
-
-
-                <label>
-                    Total:
-                </label>
-
-                <label>
-                    ${total.toFixed(2)}
-                </label>
-
-            </div>
-
-
-            {/* Product passes quantity information down to QuantityPicker */}
-            <QuantityPicker
-                quantity={quantity}
-                setQuantity={setQuantity}
-            />
-
-        </div>
-
-    );
+      {/* ADD TO CART */}
+      <button className="AddToCartBtn" onClick={onAddToCart}>
+        Add to Cart
+      </button>
+    </div>
+  );
 }
-
 
 export default Product;
