@@ -1,8 +1,15 @@
 import { useState } from "react";
 import GlobalContext from "./globalContext";
+import DataService from "../services/dataService";
 
 function GlobalProvider(props) {
   // const [state, setState] = useState(initialValue)
+
+  // PRODUCTS STATE
+  const [products, setProducts] = useState(() => {
+    let data = new DataService();
+    return data.getProducts();
+  });
 
   // CART STATE
   const [cart, setCart] = useState([]);
@@ -88,6 +95,8 @@ function GlobalProvider(props) {
       value={{
         cart: cart,
         user: user,
+        products: products,
+        setProducts: setProducts,
 
         addProductToCart: addProductToCart,
 
