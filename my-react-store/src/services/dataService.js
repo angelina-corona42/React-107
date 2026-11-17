@@ -13,6 +13,7 @@ import mechanicalKeyboard from "../assets/mechanical-keyboard.png";
 import mountainJournal from "../assets/mountain-journal.png";
 
 
+
 // Mock catalog data.
 // This is acting like our temporary database
 // until we eventually use a real API/database.
@@ -25,7 +26,7 @@ const catalog = [
         price: 18.99,
         quantity: 10,
         image: ceramicMug, 
-        desdescription: "A simple ceramic mug perfect for coffee or tea."
+        description: "A simple ceramic mug perfect for coffee or tea."
     },
 
     {

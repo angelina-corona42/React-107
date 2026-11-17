@@ -37,6 +37,9 @@ function Admin() {
       description: productDescription,
     };
 
+    console.log("New Product:", newProduct);
+    console.log("Image:", newProduct.image);
+
     setProducts([...products, newProduct]);
 
     setProductName("");
