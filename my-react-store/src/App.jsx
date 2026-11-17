@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import GlobalProvider from "./state/globalProvider";
 
@@ -36,7 +36,7 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />{" "}
           <Route path="/about" element={<About />} />{" "}
           {/* Route allows you to define the page with the path in the url bar */}
           <Route path="/contact" element={<Contact />} />

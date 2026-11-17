@@ -44,11 +44,11 @@ function Cart() {
             {cart.map((product) => (
               <div className="cart-item" key={product.id}>
                 {/* IMAGE */}
-                <img src={product.image} alt={product.title} />
+                <img src={product.image} alt={product.name} />
 
                 {/* PRODUCT INFO */}
                 <div className="cart-product-info">
-                  <h2>{product.title}</h2>
+                  <h2>{product.name}</h2>
 
                   <p>Price: ${product.price.toFixed(2)}</p>
 

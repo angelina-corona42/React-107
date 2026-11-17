@@ -20,98 +20,122 @@ const catalog = [
 
     {
         id: 1,
-        title: "Ceramic Coffee Mug",
+        name: "Ceramic Coffee Mug",
         category: "Home",
         price: 18.99,
-        image: ceramicMug
+        quantity: 10,
+        image: ceramicMug, 
+        desdescription: "A simple ceramic mug perfect for coffee or tea."
     },
 
     {
         id: 2,
-        title: "Cozy Throw Blanket",
+        name: "Cozy Throw Blanket",
         category: "Home",
         price: 34.99,
-        image: cozyThrowBlanket
+        quantity: 6,
+        image: cozyThrowBlanket, 
+        description: "A warm and cozy throw blanket for your living room."
     },
 
     {
         id: 3,
-        title: "Decorative Plant",
+        name: "Decorative Plant",
         category: "Home",
         price: 22.99,
-        image: decorativePlant
+        quantity: 8,
+        image: decorativePlant, 
+        description: "A small decorative plant to brighten up your space."
     },
 
     {
         id: 4,
-        title: "Black Headphones",
+        name: "Black Headphones",
         category: "Electronics",
         price: 49.99,
-        image: blackHeadphones
+        quantity: 12,
+        image: blackHeadphones, 
+        description: "High-quality black headphones for an immersive audio experience."
     },
 
     {
         id: 5,
-        title: "Mountain Water Bottle",
+        name: "Mountain Water Bottle",
         category: "Accessories",
         price: 24.99,
-        image: mountainWaterBottle
+        quantity: 15,
+        image: mountainWaterBottle,
+        description: "A durable water bottle perfect for outdoor adventures."
     },
 
     {
         id: 6,
-        title: "Canvas Tote Bag",
+        name: "Canvas Tote Bag",
         category: "Accessories",
         price: 16.99,
-        image: canvasToteBag
+        quantity: 14,
+        image: canvasToteBag,
+        description: "A versatile canvas tote bag for everyday use."
     },
 
     {
         id: 7,
-        title: "Olive Sweatshirt",
+        name: "Olive Sweatshirt",
         category: "Clothing",
         price: 39.99,
-        image: oliveSweatshirt
+        quantity: 7,
+        image: oliveSweatshirt,
+        description: "A comfortable olive green sweatshirt for casual wear."
     },
 
     {
         id: 8,
-        title: "Mountain Cap",
+        name: "Mountain Cap",
         category: "Clothing",
         price: 21.99,
-        image: mountainCap
+        quantity: 9,
+        image: mountainCap,
+        description: "A durable mountain cap for outdoor activities."
     },
 
     {
         id: 9,
-        title: "Woodland Pine Candle",
+        name: "Woodland Pine Candle",
         category: "Home",
         price: 17.99,
-        image: woodlandPineCandle
+        quantity: 11,
+        image: woodlandPineCandle,
+        description: "A fragrant candle that captures the essence of the woodland pine."
     },
 
     {
         id: 10,
-        title: "Wireless Mouse",
+        name: "Wireless Mouse",
         category: "Electronics",
         price: 29.99,
-        image: wirelessMouse
+        quantity: 13,
+        image: wirelessMouse,
+        description: "A sleek wireless mouse for seamless navigation."
     },
 
     {
         id: 11,
-        title: "Mechanical Keyboard",
+        name: "Mechanical Keyboard",
         category: "Electronics",
         price: 69.99,
-        image: mechanicalKeyboard
+        quantity: 5,
+        image: mechanicalKeyboard,
+        description: "A high-performance mechanical keyboard for gaming and productivity."
     },
 
     {
         id: 12,
-        title: "Mountain Journal",
+        name: "Mountain Journal",
         category: "Accessories",
         price: 14.99,
-        image: mountainJournal
+        quantity: 20,
+        image: mountainJournal,
+        description: "A durable journal for recording your mountain adventures."
     }
 
 ];

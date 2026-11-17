@@ -24,10 +24,10 @@ function Product(props) {
   return (
     <div className="product">
       {/* PRODUCT IMAGE */}
-      <img src={props.data.image} alt={props.data.title} />
+      <img src={props.data.image} alt={props.data.name} />
 
       {/* PRODUCT TITLE */}
-      <h5>{props.data.title}</h5>
+      <h5>{props.data.name}</h5>
 
       {/* PRODUCT PRICE */}
       <div className="prices">
